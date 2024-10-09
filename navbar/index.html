@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="./build/css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+<nav class="container relative mx-auto py-5 px-20 bg-slate-200 rounded-full">
+  <div class="flex items-center justify-between text-lg font-semibold">
+    <div>
+      <img src="javascript.svg" alt="">
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+    <div>
+      <button class="hidden md:block bg-black text-white hover:bg-white hover:text-black transition duration-300 ease-in-out py-4 px-8 rounded-full self-baseline">Sign Up</button>
+    </div>
+    <!--Humburger-->
+    <button id="menu-btn" class="block w-6 h-6 relative md:hidden"><i class="bi bi-list"></i></button>
+    <!-- <button id="menu-btnh" class="hamburger md:hidden focus:outline-none"><i class="bi bi-x-lg"></i></button> -->
+
+  </div>
+ 
+  <!--Mobile Menu-->
+  <div class="md:hidden">
+    <div id="menu" class="absolute flex-col hidden items-center self-end py-5 px-20 space-y-6 font-semibold bg-slate-200 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-3xl mt-7">
+      <a id="menu-btnx" href="#"><i class="bi bi-x-lg"></i></a>
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+</nav>
+
+
+<script src="main.js"></script>
+  </body>
+</html>
